@@ -42,8 +42,11 @@ p {
 
 .card__container {
   h2,
-  h4 {
+  h5 {
     color: rgb(231, 255, 0);
+  }
+  h4 {
+    color: white;
   }
   img {
     border-radius: 4px;
@@ -55,5 +58,14 @@ p {
 
   .card__title {
     text-align: left;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: white;
+      text-decoration: underline;
+    }
   }
 }

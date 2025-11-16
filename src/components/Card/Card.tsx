@@ -15,7 +15,7 @@ function Card({ title, stack, description, image, link }: CardProps) {
       <div className="card__title">
         <h2>{title}</h2>
         <h4>{stack}</h4>
-        <p>{description}</p>
+        <h5>{description}</h5>
         <a href={link} target="_blank">
           link to site
         </a>

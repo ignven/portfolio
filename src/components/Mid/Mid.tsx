@@ -2,8 +2,16 @@ import Card from "../Card/Card";
 import "../styles.css";
 import dokvita from "../../assets/dokvita.webp";
 import pazinkdarza from "../../assets/pazinkdarza.webp";
+import svenheim from "../../assets/svenheim.webp";
 
 const projectArray = [
+  {
+    title: "Decor Code Generator",
+    stack: "REACT + TS + CSS",
+    description: "Decor code generator",
+    image: svenheim,
+    link: "https://my.svenheim.no/ccg/",
+  },
   {
     title: "Dokvita",
     stack: "REACT + REDUX + Tailwind CSS",
@@ -12,19 +20,11 @@ const projectArray = [
     link: "https://www.dokvita.lt/",
   },
   {
-    title: "PAZINKDARZA",
+    title: "Pazink Darza",
     stack: "VITE + REACT + TS + SCSS",
     description: "Personal project for fun",
     image: pazinkdarza,
-    link: "http://www.pazinkdarza.lt/",
-  },
-  {
-    title: "Dokvita",
-    stack: "REACT + REDUX + Tailwind CSS",
-    description:
-      "Responsive & optimized representative website for medical auditor",
-    image: dokvita,
-    link: "https://www.dokvita.lt/",
+    link: "https://pazinkdarza.vercel.app",
   },
 ];
 
