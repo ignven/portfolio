@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* top */
+
+h1 {
+  text-transform: uppercase;
+  color: rgb(231, 255, 0);
+  font-size: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    text-align: left;
+    font-size: 1.3rem;
+  }
+}
+
+p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Cards */
+
+.mid__container {
+  display: grid;
+  flex: none;
+  gap: 15px;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+
+  justify-content: center;
+  padding: 0;
+}
+
+/* Single Card */
+
+.card__container {
+  h2,
+  h4 {
+    color: rgb(231, 255, 0);
+  }
+  img {
+    border-radius: 4px;
+    aspect-ratio: 1 / 1;
+    object-fit: none;
+    height: 250px;
+    width: 100%;
+  }
+
+  .card__title {
+    text-align: left;
+  }
+}
