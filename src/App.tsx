@@ -1,5 +1,6 @@
 import "./App.css";
 import Mid from "./components/Mid/Mid";
+import Skils from "./components/Skils/Skils";
 import Top from "./components/Top/Top";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <Top />
       <Mid />
+      <Skils />
     </>
   );
 }

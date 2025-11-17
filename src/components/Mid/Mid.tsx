@@ -24,7 +24,7 @@ const projectArray = [
     stack: "VITE + REACT + TS + SCSS",
     description: "Personal project for fun",
     image: pazinkdarza,
-    link: "https://pazinkdarza.vercel.app",
+    link: "https://pazinkdarza.lt",
   },
 ];
 

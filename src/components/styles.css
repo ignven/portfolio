@@ -41,6 +41,7 @@ p {
 /* Single Card */
 
 .card__container {
+  margin-bottom: 2rem;
   h2,
   h5 {
     color: rgb(231, 255, 0);
@@ -50,10 +51,13 @@ p {
   }
   img {
     border-radius: 4px;
-    aspect-ratio: 1 / 1;
-    object-fit: none;
+    object-fit: cover;
     height: 250px;
     width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   .card__title {
@@ -67,5 +71,35 @@ p {
       color: white;
       text-decoration: underline;
     }
+  }
+}
+
+/* Skils */
+
+.animation-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skills__track {
+  display: inline-flex;
+  gap: 0.5rem;
+  white-space: nowrap;
+  animation: scrollTrack 60s linear infinite;
+}
+
+/* styling optional */
+.skills__track p {
+  font-size: 20px;
+  border: 2px solid white;
+  padding: 0 8px;
+}
+
+@keyframes scrollTrack {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

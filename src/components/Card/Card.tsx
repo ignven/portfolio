@@ -11,14 +11,11 @@ interface CardProps {
 function Card({ title, stack, description, image, link }: CardProps) {
   return (
     <div className="card__container">
-      <img src={image} alt={title} />
+      <img src={image} alt={title} onClick={() => window.open(link)} />
       <div className="card__title">
         <h2>{title}</h2>
         <h4>{stack}</h4>
         <h5>{description}</h5>
-        <a href={link} target="_blank">
-          link to site
-        </a>
       </div>
     </div>
   );
