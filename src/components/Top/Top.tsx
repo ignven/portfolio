@@ -2,7 +2,7 @@ import "../styles.css";
 
 function Top() {
   return (
-    <>
+    <div className="top__container">
       <h1>
         Ignas Ven.
         <span>
@@ -19,7 +19,7 @@ function Top() {
         an idea in excel, Intranet page, Jira tickets sorting page. I also built
         and manage two Jira Service Management projects.
       </p>
-    </>
+    </div>
   );
 }
 

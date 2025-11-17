@@ -3,37 +3,42 @@
   padding: 0;
 }
 
+.app__container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 /* top */
 
-h1 {
-  text-transform: uppercase;
-  color: rgb(231, 255, 0);
-  font-size: 3rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.top__container {
+  h1 {
+    text-transform: uppercase;
+    color: rgb(231, 255, 0);
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-  span {
+  h1 span {
     text-align: left;
     font-size: 1.3rem;
   }
-}
 
-p {
-  color: rgb(255, 255, 255);
-  font-size: 1.2rem;
-  text-align: left;
-  margin-bottom: 2rem;
+  p {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
 }
 
 /* Cards */
 
 .mid__container {
   display: grid;
-  flex: none;
   gap: 15px;
   grid-template-columns: repeat(3, minmax(200px, 1fr));
-
   justify-content: center;
   padding: 0;
 }
@@ -42,39 +47,39 @@ p {
 
 .card__container {
   margin-bottom: 2rem;
-  h2,
-  h5 {
-    color: rgb(231, 255, 0);
-  }
-  h4 {
-    color: white;
-  }
-  img {
-    border-radius: 4px;
-    object-fit: cover;
-    height: 250px;
-    width: 100%;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  .card__title {
-    text-align: left;
-
-    p {
-      margin-bottom: 0;
-    }
-
-    a {
-      color: white;
-      text-decoration: underline;
-    }
-  }
 }
 
-/* Skils */
+.card__container h2,
+.card__container h5 {
+  color: rgb(231, 255, 0);
+}
+
+.card__container h4 {
+  color: white;
+}
+
+.card__container img {
+  border-radius: 4px;
+  object-fit: cover;
+  height: 250px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card__title {
+  text-align: left;
+}
+
+.card__title p {
+  margin-bottom: 0;
+}
+
+.card__title a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Skills */
 
 .animation-container {
   overflow: hidden;
@@ -88,8 +93,8 @@ p {
   animation: scrollTrack 60s linear infinite;
 }
 
-/* styling optional */
 .skills__track p {
+  color: white;
   font-size: 20px;
   border: 2px solid white;
   padding: 0 8px;
@@ -101,5 +106,41 @@ p {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+/* ---------------------------------------
+ MOBILE + TABLET < 1024px 
+-----------------------------------------*/
+@media only screen and (max-width: 1024px) {
+  .app__container {
+    max-width: 80dvw;
+
+    .top__container {
+      h1 {
+        flex-direction: column;
+        margin-bottom: 1rem;
+
+        span {
+          font-size: 0.8rem;
+        }
+      }
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+    }
+
+    .card__container {
+      margin-bottom: 0.5rem;
+    }
+
+    .mid__container {
+      grid-template-columns: 1fr;
+    }
+
+    .skills__track p {
+      font-size: 0.6rem;
+    }
   }
 }

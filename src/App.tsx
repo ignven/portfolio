@@ -5,11 +5,11 @@ import Top from "./components/Top/Top";
 
 function App() {
   return (
-    <>
+    <div className="app__container">
       <Top />
       <Mid />
       <Skils />
-    </>
+    </div>
   );
 }
 
