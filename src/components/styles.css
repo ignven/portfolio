@@ -6,6 +6,9 @@
 .app__container {
   margin: 0 auto;
   max-width: 1200px;
+  background: black;
+  padding: 2.5rem;
+  border-radius: 6px;
 }
 
 /* top */
