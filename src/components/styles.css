@@ -4,10 +4,13 @@
 }
 
 .app__container {
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   max-width: 1200px;
   background: black;
-  padding: 2.5rem;
+  padding: 2rem;
   border-radius: 6px;
 }
 
@@ -115,6 +118,7 @@
 @media only screen and (max-width: 1024px) {
   .app__container {
     max-width: 80dvw;
+    padding: 1.5rem;
 
     .top__container {
       h1 {
