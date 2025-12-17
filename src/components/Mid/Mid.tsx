@@ -1,10 +1,18 @@
 import Card from "../Card/Card";
 import "../styles.css";
 import dokvita from "../../assets/dokvita.webp";
+import mechjira from "../../assets/mechjira.png";
 import pazinkdarza from "../../assets/pazinkdarza.webp";
 import svenheim from "../../assets/svenheim.webp";
 
 const projectArray = [
+  {
+    title: "Maintenance registering",
+    stack: "NEXT.JS",
+    description: "JIRA API issues filtering/export page",
+    image: mechjira,
+    link: "https://mech-jira-next.vercel.app/",
+  },
   {
     title: "Decor Code Generator",
     stack: "REACT + TS + CSS",
